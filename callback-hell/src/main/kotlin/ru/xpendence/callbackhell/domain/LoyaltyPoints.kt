@@ -1,4 +1,7 @@
 package ru.xpendence.callbackhell.domain
 
-class LoyalityPoints {
-}
+data class LoyaltyPoints(
+    val userId: String,
+    val currentPoints: Int,
+    val lifetimePoints: Int
+)

@@ -1,4 +1,12 @@
 package ru.xpendence.callbackhell.domain
 
-class Order {
-}
+import java.time.OffsetDateTime
+
+data class Order(
+    val id: String,
+    val userId: String,
+    val items: List<OrderItem>,
+    val total: Double,
+    val status: String,
+    val createdAt: OffsetDateTime
+)

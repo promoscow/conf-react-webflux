@@ -1,4 +1,6 @@
 package ru.xpendence.callbackhell.domain
 
-class CartItem {
-}
+data class CartItem(
+    val productId: String,
+    val quantity: Int
+)

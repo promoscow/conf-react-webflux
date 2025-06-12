@@ -1,4 +1,7 @@
 package ru.xpendence.callbackhell.domain
 
-class OrdrItem {
-}
+data class OrderItem(
+    val productId: String,
+    val quantity: Int,
+    val priceAtPurchase: Double
+)
